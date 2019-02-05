@@ -1,0 +1,46 @@
+.blogsection {
+    background-color: blue;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif
+}
+
+#list {
+    border: 1px solid paleturquoise;
+    border-radius: 30%;
+}
+footer{
+    background-color: blue
+}
+.blogfooter{
+    background-color: green
+}
+#blog-footer-page-one{
+    background-color: red
+}
+
+
+/* 2. Select any `a` elements that are inside a `p` element. Make their font color black.
+3. Select any `p` element that is a directly adjacent sibling of an `h2` element and give it a `background-color` of `lightblue`.
+4. Select any `img` element that is a sibling of a `p` element and give it a `border-radius` of `30%`. (Doesn't need to be a directly adjscent sibling.) */
+p a{
+    color: black
+}
+h2 + p{
+    background-color: lightblue
+}
+p ~ img{
+    border-radius: 30%
+}
+
+/* 1. Use the same HTML you copied and pasted before.
+2. Use `:first-child` to select the h2 element that is the first child of the article element.
+3. Use `:nth-child()` to select the paragraph element that's third child of the article element. */
+
+article h2:first-child{
+    background-color: blueviolet
+}
+article p:nth-child(3){
+    background-color: gray
+}

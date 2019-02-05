@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!-- 
+1. In your HTML, create an article tag that will serve as your main                  
+representative component. Give the element a unique identifier.
+2. In this component, create a sub-component for basic information using the        
+ section tag. In this section create elements for the representative's image,      
+ name, district info, and political affiliation.
+3. Beneath the basic information, you will create a sub-component, using a          
+ section tag, to list any committees the candidate is serving on.
+4. The last component will hold links to any legislation that your representative   
+ has enacted.
+5. Make sure you use good BEM-style class names for each element in your             
+components. Put a comment above each component explaining what it is. 
+-->
+
+<!-- This is the whole district rep block. -->
+<article class="district-rep">
+    <!-- This is a component containing basic info about him. -->
+    <section class="district-rep__basic-info">
+
+        <img src="https://www.govtrack.us/data/photos/412662-200px.jpeg"></img>
+        <p>Alex Mooney</p>
+        <p>Representative for West Virginia's 2nd District</p>
+        <p>Republican</p>
+
+        <!-- This is a component about committees he's on -->
+        <section class="disctrict-rep__basic-info__committees">
+            <li>Committee on Financial Services</li>
+            <li>Budget Committee</li>
+            <li>Natural Resources Committee
+                <!-- This element is a sublist to the Natural Resources Committee. -->
+                <li class="disctrict-rep__basic-info__committees__littlelist">
+                    Subcommittee on Energy and Mineral  Resources
+                </li>
+                <li class="disctrict-rep__basic-info__committees__littlelist">
+                    Subcommittee on Oversight and Investigations
+                </li>
+            </li>
+        </section>
+        <!-- This component is a collection of links to legislation Mooney voted on. -->
+        <section class="disctrict-rep__basic-info__votes">
+             <p id= "vote links">Links to noteworthy votes:
+                 <!-- These elements are individual links to his votes. -->
+                <li class="disctrict-rep__basic-info__votes__list">
+                    Voted Nay on: <a href="http://clerk.house.gov/evs/2018/roll434.xml"> Agriculture and Nutrition Act of 2018 (Conference report) (HR 2)</a>
+                </li>
+                <li class="disctrict-rep__basic-info__votes__list">
+                    Voted Yea on: <a href="http://clerk.house.gov/evs/2018/roll284.xml"> Agriculture and Nutrition Act of 2018 (HR 2 (second vote))</a>
+                </li>
+                <li class="disctrict-rep__basic-info__votes__list">
+                    Voted Yea on: <a href="http://clerk.house.gov/evs/2018/roll282.xml"> Securing America’s Future Act of 2018 (HR 4760)</a>
+                </li>
+                <li class="disctrict-rep__basic-info__votes__list">
+                    Voted Yea on: <a href="http://clerk.house.gov/evs/2018/roll205.xml"> Agriculture and Nutrition Act of 2018 (Farm bill) (HR 2)</a>
+                </li>
+                <li class="disctrict-rep__basic-info__votes__list">
+                    Voted Yea on: <a href="http://clerk.house.gov/evs/2017/roll549.xml"> Pain-Capable Unborn Child Protection Act (HR 36)</a>
+                </li>
+             </p>
+        </section>
+    </section>
+</article>
+</body>
+</html>
